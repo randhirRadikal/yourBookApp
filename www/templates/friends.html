@@ -1,0 +1,12 @@
+﻿
+<ion-view view-title="Friends">
+    <ion-content class="im-wrapper">
+        <div class="list">
+            <a class="item item-avatar" ng-repeat="(key,user) in users" ng-if="cUserId != key" href="#/app/chat/{{key}}">
+                <img src="img/material1.jpg">
+                <h2>{{user.name}}</h2>
+                <p>{{user.email}}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

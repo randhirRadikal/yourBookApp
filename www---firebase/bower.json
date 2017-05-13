@@ -1,0 +1,22 @@
+{
+  "name": "your-book",
+  "description": "social networking app",
+  "main": "",
+  "authors": [
+    "Randhir Jha"
+  ],
+  "license": "BRS",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^3.7.5",
+    "angularfire": "^2.3.0"
+  }
+}

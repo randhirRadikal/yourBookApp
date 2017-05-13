@@ -1,0 +1,27 @@
+<ion-view view-title="Registration">
+    <ion-content class="im-wrapper">
+      <form ng-submit="userRegistration(registrationData)">
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Name</span>
+            <input type="text" ng-model="registrationData.name" placeholder="Name">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Username</span>
+            <input type="text" ng-model="registrationData.username" placeholder="Username">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="text" ng-model="registrationData.email" placeholder="Email">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password" ng-model="registrationData.password" placeholder="Password">
+          </label>
+          <label class="item">
+            <button class="button button-block button-positive" type="submit">Submit</button>
+          </label>
+        </div>
+      </form>
+    </ion-content>
+</ion-view>

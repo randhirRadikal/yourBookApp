@@ -1,0 +1,35 @@
+
+<ion-view view-title="Chat Room">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">{{fUserDetails.name}}</strong>
+        </div>
+        <div class="im-wrapper">
+          <div class="list" ng-repeat="(key,chat) in chatList">
+            <a class="item item-avatar"  ng-if="chat.currentUserId === fUserId" href="javascript:void(0);">
+                <img src="img/material1.jpg">
+                <h2>{{chat.name}}</h2>
+                <p>{{chat.message}}</p>
+            </a>
+            <a class="item item-avatar"  ng-if="chat.currentUserId != fUserId" href="javascript:void(0);">
+                <img src="img/material1.jpg">
+                <h2>You</h2>
+                <p>{{chat.message}}</p>
+            </a>
+          </div>
+        </div>
+
+    </ion-content>
+    <div style="position: absolute; bottom: 0px; width: 100%">
+      <div class="bar bar-footer">
+        <!-- <form ng-submit="sendMessage(message);"> -->
+            <div class="item item-input-inset">
+                <label class="item item-input-wrapper">
+                <input type="text" placeholder="Message" ng-model="message">
+                </label>
+                <button  type="submit" ng-click="sendMessage(message);" class="button button-small button-royal icon ion-checkmark-round pull-right"></button>
+            </div>
+        <!-- </form> -->
+      </div>
+    </div>
+</ion-view>
